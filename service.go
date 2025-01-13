@@ -5,6 +5,7 @@ import (
 	"strings"
 	"os"
 	"os/exec"
+	"errors"
 	"github.com/godbus/dbus/v5"
 )
 
