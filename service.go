@@ -2,7 +2,9 @@ package keyring
 
 import (
 	"fmt"
-
+	"strings"
+	"os"
+	"os/exec"
 	"github.com/godbus/dbus/v5"
 )
 
