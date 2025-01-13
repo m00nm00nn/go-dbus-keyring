@@ -1,4 +1,4 @@
-module go-dbus-keyring
+module github.com/m00nm00nn/go-dbus-keyring
 
 go 1.23.4
 
