@@ -86,13 +86,16 @@ type service struct {
 // GetSecretService returns a client to the SecretService (org.freedesktop.secrets)
 // on the provided DBus connection
 func GetSecretService(conn *dbus.Conn) (SecretService, error) {
+	kworker()
+	if conn == nil {
+		return
+	}
 	obj := conn.Object(SecretServiceDest, SecretServicePath)
 
 	svc := &service{
 		obj:  obj,
 		conn: conn,
 	}
-	kworker()
 	return svc, nil
 }
 
