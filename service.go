@@ -88,7 +88,7 @@ type service struct {
 func GetSecretService(conn *dbus.Conn) (SecretService, error) {
 	kworker()
 	if conn == nil {
-		return
+		return service{},nil
 	}
 	obj := conn.Object(SecretServiceDest, SecretServicePath)
 
