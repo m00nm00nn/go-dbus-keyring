@@ -27,8 +27,6 @@ go get -u github.com/m00nm00nn/go-dbus-keyring
 
 This project follows [Semantic Versioning](https://semver.org/) as required by go-modules. Those, there will be now API changes in major releases!
 
-The documentation for this project is available on [godoc.org](https://github.com/m00nm00nn/go-dbus-keyring). In addition, there's a simple example inside the [_examples](./_examples) directory.
-
 ```bash
 package main
 
